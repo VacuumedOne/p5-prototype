@@ -40,8 +40,12 @@ module.exports = {
     ]
   },
   //webpack-dev-serverの設定
-  // devServer: {
-  //   contentBase: 'public',
-  //   port: 8080
-  // }
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    port: 8080,
+    inline: true,
+    hot: true,
+    overlay: true,
+    publicPath: '/js/'
+  }
 }

@@ -108,18 +108,6 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
-/***/ "./src/Key.js":
-/*!********************!*\
-  !*** ./src/Key.js ***!
-  \********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Key; });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Key =\n/*#__PURE__*/\nfunction () {\n  function Key() {\n    _classCallCheck(this, Key);\n  }\n\n  _createClass(Key, [{\n    key: \"Init\",\n    value: function Init(keyCode) {\n      this.right = false;\n      this.left = false;\n      this.up = false;\n      this.down = false;\n    }\n  }], [{\n    key: \"setPressedState\",\n    value: function setPressedState(keyCode) {\n      if (keyCode === RIGHT_ARROW) {\n        this.right = true;\n      }\n\n      if (keyCode === LEFT_ARROW) {\n        this.left = true;\n      }\n\n      if (keyCode === UP_ARROW) {\n        this.up = true;\n      }\n\n      if (keyCode === DOWN_ARROW) {\n        this.down = true;\n      }\n    }\n  }, {\n    key: \"isRightPressed\",\n    value: function isRightPressed() {\n      return this.right;\n    }\n  }, {\n    key: \"isLeftPressed\",\n    value: function isLeftPressed() {\n      return this.left;\n    }\n  }, {\n    key: \"isUpPressed\",\n    value: function isUpPressed() {\n      return this.up;\n    }\n  }, {\n    key: \"isDownPressed\",\n    value: function isDownPressed() {\n      return this.down;\n    }\n  }]);\n\n  return Key;\n}();\n\n\n\n//# sourceURL=webpack:///./src/Key.js?");
-
-/***/ }),
-
 /***/ "./src/main.js":
 /*!*********************!*\
   !*** ./src/main.js ***!
@@ -128,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var p5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! p5 */ \"./node_modules/p5/lib/p5.js\");\n/* harmony import */ var p5__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(p5__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Key_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Key.js */ \"./src/Key.js\");\n\n\n\nvar sketch = function sketch(p) {\n  p.setup = function () {\n    //canvasのセットアップ\n    p.createCanvas(500, 500);\n    p.background(51); //オブジェクトのセットアップ\n    // Key.Init()\n  };\n\n  p.draw = function () {\n    p.ellipse(50, 50, 80, 80);\n  };\n};\n\nnew p5__WEBPACK_IMPORTED_MODULE_0___default.a(sketch, document.body);\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var p5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! p5 */ \"./node_modules/p5/lib/p5.js\");\n/* harmony import */ var p5__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(p5__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar sketch = function sketch(p) {\n  p.setup = function () {\n    //canvasのセットアップ\n    p.createCanvas(500, 500);\n    p.background(51); //オブジェクトのセットアップ\n  };\n\n  p.draw = function () {\n    p.ellipse(100, 50, 80, 80);\n  };\n};\n\nnew p5__WEBPACK_IMPORTED_MODULE_0___default.a(sketch, document.body);\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 

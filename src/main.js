@@ -8,7 +8,7 @@ const sketch = (p) => {
     //オブジェクトのセットアップ
   }
   p.draw = function () {
-    p.ellipse(50, 50, 80, 80)
+    p.ellipse(150, 150, 100, 100)
   }
 }
 
